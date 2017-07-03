@@ -12,6 +12,12 @@ main{
     margin: 30px;
 }
 
+@media(max-width: 1000px){
+    container{
+        flex-direction: column;
+    }
+}
+
 .blue{
     color: #1D4E89;
 }
