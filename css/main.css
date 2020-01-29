@@ -10,6 +10,8 @@ main{
     flex-grow: 1;
     border: 5px solid;
     margin: 30px;
+    vertical-align: middle;
+
 }
 
 @media(max-width: 1000px){
