@@ -1,71 +1,95 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <title>
-            Max Pridy
-        </title>
-
-        <link rel="shortcut icon" href="./images/max.jpg">
-
-
-        <!-- CSS  -->
-        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <container class="jumbotron">
-            <main id="leftmain">
-
-                <h2>이상준(Lee Sang Joon)</h2>
-                <br>
-
-                <div>
-                    <h2>프로필</h2>
-
-                    <li>Programming</li>
-                    <li>2019.08 경기대학교 컴퓨터과학과 졸업</li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Max Pridy</title>
+    <link rel="shortcut icon" href="./images/max.jpg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="jumbotron text-center">
+            <img src="./images/max.jpg" alt="Max Pridy" class="img-circle" width="120" height="120">
+            <h1>Max Pridy</h1>
+            <p>Reinforcement Learning Engineer</p>
+        </header>
+        <!-- Content -->
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <!-- Profile Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h3 class="panel-title">프로필</h3></div>
+                    <div class="panel-body">
+                        <ul class="list-unstyled">
+                            <li><strong>전문 분야:</strong> Programming</li>
+                            <li><strong>학력:</strong> 2019.08 경기대학교 컴퓨터과학과 졸업</li>
+                        </ul>
+                    </div>
                 </div>
-                <br>
-
-                <div>
-                    <h2>링크</h2>
-                    <li>Email  : maxpridy@gmail.com</li>
-                    <li>Github : <a href="http://github.com/Maxpridy">http://github.com/Maxpridy</a></li>
-                    <li>Kaggle : <a href="https://www.kaggle.com/maxpridy">https://www.kaggle.com/maxpridy</a></li>
-                    <li>Blog : <a href="http://blog.naver.com/dustashy">http://blog.naver.com/dustashy</a></li>
-                    <li>Youtube : <a href="https://www.youtube.com/channel/UCm2HK2bAiekJ1VRAodge7Jg">https://www.youtube.com/channel/UCm2HK2bAiekJ1VRAodge7Jg</a></li>
+                <!-- Career Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h3 class="panel-title">경력</h3></div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>넷마블 강화학습 엔지니어 (2022.05 &ndash; 현재)</li>
+                        </ul>
+                    </div>
                 </div>
-                <br>
-
-                <div>
-                    <h2>관심 분야</h2>
-                    <li>강화학습, 머신러닝</li>
-                    <li>프로그래밍</li>
+            </div>
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <!-- Links Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h3 class="panel-title">링크</h3></div>
+                    <div class="panel-body">
+                        <ul class="list-unstyled">
+                            <li>Email: <a href="mailto:maxpridy@gmail.com">maxpridy@gmail.com</a></li>
+                            <li>Github: <a href="http://github.com/Maxpridy" target="_blank">github.com/Maxpridy</a></li>
+                            <li>Kaggle: <a href="https://www.kaggle.com/maxpridy" target="_blank">kaggle.com/maxpridy</a></li>
+                            <li>Blog: <a href="http://blog.naver.com/dustashy" target="_blank">blog.naver.com/dustashy</a></li>
+                            <li>Youtube: <a href="https://www.youtube.com/channel/UCm2HK2bAiekJ1VRAodge7Jg" target="_blank">youtube.com/channel/UCm2HK2bAiekJ1VRAodge7Jg</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div>
-                    <h2>대회 참가</h2>
-                    <li>2018.04 [네이버] AI 해커톤 3위</li>
-                    <li>2018.06 [OpenAI] Retro contest 24위</li>
-                    <li>2019.01 [카카오 아레나] 쇼핑 카테고리 분류 7위</li>
-                    <li>2019.02 [Unity Obstacle Tower Challenge] 참가</li>
-                    <li>2019.09 [MineRL] 참가</li>
-                    <li>2020.09 [LG 블럭 장난감 제조 공정 최적화 AI경진대회] 4위</li>
-                    <li>2020.10 [MineRL2020] 참가</li>
-                    <li>2021.02 [Kaggle] RPS 49위 은메달</li>
-                    <li>2021.12 [RLKorea] Drone Delivery Challenge with Unity 최종 3위</li>
+                <!-- Interests Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h3 class="panel-title">관심 분야</h3></div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>강화학습, 머신러닝</li>
+                            <li>프로그래밍</li>
+                        </ul>
+                    </div>
                 </div>
-
-            </main>
-
-            <!-- <main id="rightmain" class="col-md-6">
-
-            </main> -->
-
-        </container>
-
-    </body>
+                <!-- Competitions Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h3 class="panel-title">대회 참가</h3></div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>2018.04 [네이버] AI 해커톤 3위</li>
+                            <li>2018.06 [OpenAI] Retro contest 24위</li>
+                            <li>2019.01 [카카오 아레나] 쇼핑 카테고리 분류 7위</li>
+                            <li>2019.02 [Unity Obstacle Tower Challenge] 참가</li>
+                            <li>2019.09 [MineRL] 참가</li>
+                            <li>2020.09 [LG 블럭 장난감 제조 공정 최적화 AI경진대회] 4위</li>
+                            <li>2020.10 [MineRL2020] 참가</li>
+                            <li>2021.02 [Kaggle] RPS 49위 은메달</li>
+                            <li>2021.12 [RLKorea] Drone Delivery Challenge with Unity 최종 3위</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
 </html>
