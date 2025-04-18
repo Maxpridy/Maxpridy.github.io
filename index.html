@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Max Pridy</title>
     <link rel="shortcut icon" href="./images/max.jpg">
     <!-- Google Fonts -->
@@ -14,80 +14,79 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
-            color: #343a40;
+            background-color: #f2f5f7;
+            color: #495057;
         }
         .jumbotron {
-            background-image: url('./images/header-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            position: relative;
-            overflow: hidden;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./images/header-bg.jpg') center/cover no-repeat;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
             margin-bottom: 0;
-            padding: 4rem 2rem;
+            padding: 5rem 1rem;
         }
-        .jumbotron::after {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0,0,0,0.5);
-        }
-        .jumbotron .container {
-            position: relative;
-            z-index: 1;
-        }
-        .jumbotron .rounded-circle {
+        .jumbotron img {
             border: 4px solid #fff;
         }
         .card {
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
+            background-color: #fff;
+            border: none;
+            border-radius: 0.5rem;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
         }
         .card-title {
             font-weight: 700;
-            color: #007bff;
+            color: #0069d9;
         }
         .list-unstyled li i {
-            margin-right: 8px;
-            color: #007bff;
+            width: 24px;
+            text-align: center;
+            color: #0069d9;
+        }
+        a {
+            color: #0069d9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="jumbotron text-center text-white">
+    <div class="jumbotron text-center">
         <div class="container">
-            <img src="./images/max.jpg" alt="Max Pridy" class="rounded-circle img-fluid" width="150">
+            <img src="./images/max.jpg" alt="Max Pridy" class="rounded-circle img-fluid" width="160">
             <h1 class="display-4 mt-3">Max Pridy</h1>
             <p class="lead">Reinforcement Learning Engineer</p>
         </div>
     </div>
-    <div class="container mt-5">
+    <div class="container py-5">
         <div class="row">
-            <div class="col-lg-4 mb-4">
-                <div class="card p-4">
+            <div class="col-md-4 mb-4">
+                <div class="card p-4 h-100">
                     <h5 class="card-title"><i class="fas fa-briefcase"></i> 경력</h5>
-                    <ul class="list-unstyled mt-3">
+                    <ul class="list-unstyled mt-3 mb-0">
                         <li><i class="fas fa-rocket"></i>넷마블 강화학습 엔지니어 (2022.05 – 현재)</li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-4 mb-4">
-                <div class="card p-4">
+            <div class="col-md-4 mb-4">
+                <div class="card p-4 h-100">
                     <h5 class="card-title"><i class="fas fa-heart"></i> 관심 분야</h5>
-                    <ul class="list-unstyled mt-3">
+                    <ul class="list-unstyled mt-3 mb-0">
                         <li><i class="fas fa-robot"></i>강화학습, 머신러닝</li>
                         <li><i class="fas fa-laptop-code"></i>프로그래밍</li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-4 mb-4">
-                <div class="card p-4">
+            <div class="col-md-4 mb-4">
+                <div class="card p-4 h-100">
                     <h5 class="card-title"><i class="fas fa-link"></i> 링크</h5>
-                    <ul class="list-unstyled mt-3">
+                    <ul class="list-unstyled mt-3 mb-0">
                         <li><i class="fas fa-envelope"></i><a href="mailto:maxpridy@gmail.com">maxpridy@gmail.com</a></li>
                         <li><i class="fab fa-github"></i><a href="http://github.com/Maxpridy" target="_blank">github.com/Maxpridy</a></li>
                         <li><i class="fab fa-kaggle"></i><a href="https://www.kaggle.com/maxpridy" target="_blank">kaggle.com/maxpridy</a></li>
@@ -98,10 +97,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="card p-4">
+            <div class="col-12 mb-4">
+                <div class="card p-4 h-100">
                     <h5 class="card-title"><i class="fas fa-trophy"></i> 대회 참가</h5>
-                    <ul class="list-unstyled mt-3">
+                    <ul class="list-unstyled mt-3 mb-0">
                         <li>2018.04 [네이버] AI 해커톤 3위</li>
                         <li>2018.06 [OpenAI] Retro contest 24위</li>
                         <li>2019.01 [카카오 아레나] 쇼핑 카테고리 분류 7위</li>
