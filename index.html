@@ -5,90 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Max Pridy</title>
     <link rel="shortcut icon" href="./images/max.jpg">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-dyN1QBGpL+1TUN324j6nU5zTh+Kqz1Q4ticZG9GmE+ic0Lbi9jFusn3+G2v30o/p" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .jumbotron {
+            background-image: url('./images/header-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 0;
+            padding: 4rem 2rem;
+        }
+        .jumbotron::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        .jumbotron .container {
+            position: relative;
+            z-index: 1;
+        }
+        .jumbotron .rounded-circle {
+            border: 4px solid #fff;
+        }
+        .card {
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-title {
+            font-weight: 700;
+            color: #007bff;
+        }
+        .list-unstyled li i {
+            margin-right: 8px;
+            color: #007bff;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="jumbotron text-center">
-            <img src="./images/max.jpg" alt="Max Pridy" class="img-circle" width="120" height="120">
-            <h1>Max Pridy</h1>
-            <p>Reinforcement Learning Engineer</p>
-        </header>
-        <!-- Content -->
+    <div class="jumbotron text-center text-white">
+        <div class="container">
+            <img src="./images/max.jpg" alt="Max Pridy" class="rounded-circle img-fluid" width="150">
+            <h1 class="display-4 mt-3">Max Pridy</h1>
+            <p class="lead">Reinforcement Learning Engineer</p>
+        </div>
+    </div>
+    <div class="container mt-5">
         <div class="row">
-            <!-- Left Column -->
-            <div class="col-md-6">
-                <!-- Profile Panel -->
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title">프로필</h3></div>
-                    <div class="panel-body">
-                        <ul class="list-unstyled">
-                            <li><strong>관심분야:</strong> 강화학습, 게임</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Career Panel -->
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title">경력</h3></div>
-                    <div class="panel-body">
-                        <ul>
-                            <li>넷마블 강화학습 엔지니어 (2022.05 &ndash; 현재)</li>
-                        </ul>
-                    </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card p-4">
+                    <h5 class="card-title"><i class="fas fa-user"></i> 프로필</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fas fa-code"></i>전문 분야: Programming</li>
+                        <li><i class="fas fa-graduation-cap"></i>학력: 2019.08 경기대학교 컴퓨터과학과 졸업</li>
+                    </ul>
                 </div>
             </div>
-            <!-- Right Column -->
-            <div class="col-md-6">
-                <!-- Links Panel -->
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title">링크</h3></div>
-                    <div class="panel-body">
-                        <ul class="list-unstyled">
-                            <li>Email: <a href="mailto:maxpridy@gmail.com">maxpridy@gmail.com</a></li>
-                            <li>Github: <a href="http://github.com/Maxpridy" target="_blank">github.com/Maxpridy</a></li>
-                            <li>Kaggle: <a href="https://www.kaggle.com/maxpridy" target="_blank">kaggle.com/maxpridy</a></li>
-                            <li>Blog: <a href="http://blog.naver.com/dustashy" target="_blank">blog.naver.com/dustashy</a></li>
-                            <li>Youtube: <a href="https://www.youtube.com/channel/UCm2HK2bAiekJ1VRAodge7Jg" target="_blank">youtube.com/channel/UCm2HK2bAiekJ1VRAodge7Jg</a></li>
-                        </ul>
-                    </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card p-4">
+                    <h5 class="card-title"><i class="fas fa-briefcase"></i> 경력</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fas fa-rocket"></i>넷마블 강화학습 엔지니어 (2022.05 – 현재)</li>
+                    </ul>
                 </div>
-                <!-- Interests Panel -->
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title">관심 분야</h3></div>
-                    <div class="panel-body">
-                        <ul>
-                            <li>강화학습, 머신러닝</li>
-                            <li>프로그래밍</li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card p-4">
+                    <h5 class="card-title"><i class="fas fa-heart"></i> 관심 분야</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fas fa-robot"></i>강화학습, 머신러닝</li>
+                        <li><i class="fas fa-laptop-code"></i>프로그래밍</li>
+                    </ul>
                 </div>
-                <!-- Competitions Panel -->
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title">대회 참가</h3></div>
-                    <div class="panel-body">
-                        <ul>
-                            <li>2018.04 [네이버] AI 해커톤 3위</li>
-                            <li>2018.06 [OpenAI] Retro contest 24위</li>
-                            <li>2019.01 [카카오 아레나] 쇼핑 카테고리 분류 7위</li>
-                            <li>2019.02 [Unity Obstacle Tower Challenge] 참가</li>
-                            <li>2019.09 [MineRL] 참가</li>
-                            <li>2020.09 [LG 블럭 장난감 제조 공정 최적화 AI경진대회] 4위</li>
-                            <li>2020.10 [MineRL2020] 참가</li>
-                            <li>2021.02 [Kaggle] RPS 49위 은메달</li>
-                            <li>2021.12 [RLKorea] Drone Delivery Challenge with Unity 최종 3위</li>
-                        </ul>
-                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card p-4">
+                    <h5 class="card-title"><i class="fas fa-link"></i> 링크</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fas fa-envelope"></i><a href="mailto:maxpridy@gmail.com">maxpridy@gmail.com</a></li>
+                        <li><i class="fab fa-github"></i><a href="http://github.com/Maxpridy" target="_blank">github.com/Maxpridy</a></li>
+                        <li><i class="fab fa-kaggle"></i><a href="https://www.kaggle.com/maxpridy" target="_blank">kaggle.com/maxpridy</a></li>
+                        <li><i class="fas fa-blog"></i><a href="http://blog.naver.com/dustashy" target="_blank">blog.naver.com/dustashy</a></li>
+                        <li><i class="fab fa-youtube"></i><a href="https://www.youtube.com/channel/UCm2HK2bAiekJ1VRAodge7Jg" target="_blank">YouTube Channel</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card p-4">
+                    <h5 class="card-title"><i class="fas fa-trophy"></i> 대회 참가</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li>2018.04 [네이버] AI 해커톤 3위</li>
+                        <li>2018.06 [OpenAI] Retro contest 24위</li>
+                        <li>2019.01 [카카오 아레나] 쇼핑 카테고리 분류 7위</li>
+                        <li>2019.02 [Unity Obstacle Tower Challenge] 참가</li>
+                        <li>2019.09 [MineRL] 참가</li>
+                        <li>2020.09 [LG 블럭 장난감 제조 공정 최적화 AI경진대회] 4위</li>
+                        <li>2020.10 [MineRL2020] 참가</li>
+                        <li>2021.02 [Kaggle] RPS 49위 은메달</li>
+                        <li>2021.12 [RLKorea] Drone Delivery Challenge with Unity 최종 3위</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- jQuery and Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
